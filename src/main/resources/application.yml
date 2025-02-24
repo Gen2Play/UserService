@@ -1,2 +1,9 @@
 server:
-  port: 8081
+  port: 8082
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:https://discovery.vothanhtuyen.id.vn/eureka/}
+    register-with-eureka: false
+    fetch-registry: false
